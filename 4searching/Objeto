@@ -1,0 +1,12 @@
+let object =  [ {name: "Melina", position: "ux designer"}, {name: "susy", position: "strategist"},{name: "isabel", position: "developer"},{name: "rachel", position: "manager"},{name: "MM", position: "developer" }];
+      
+  function Aleatorios(){
+   let inicio=0;
+   let fin=4; 
+   let num = Math.random();
+       num = inicio + num *(fin - inicio +1);
+       num = Math.floor(num);
+    
+   return num;
+  }
+      console.log(object[Aleatorios()]);
