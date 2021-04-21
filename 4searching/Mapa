@@ -1,0 +1,14 @@
+function Aleatorio(){
+ 
+   let inicio=1;
+   let fin=100; 
+   let num = Math.random();
+       num = inicio + num *(fin - inicio +1);
+       num = Math.floor(num);
+    
+   return num;
+  }
+     let map = new Map();
+
+      map.set(Aleatorio(),Aleatorio());
+       console.log(map);
