@@ -1,0 +1,28 @@
+function letraAle(){
+ let inicio=65;
+   let fin=90; 
+    let num = Math.random();
+    
+    num  = inicio + num *(fin - inicio +1);
+    num = Math.floor(num);
+   let letra = String.fromCharCode(num);
+    
+   return letra;
+  }
+  let nombres=[];
+  let k = "YMXM";
+
+   for(let i =0; i<5; i++){
+    
+    nombres.push(letraAle()+letraAle()+letraAle()+letraAle());
+  }
+  nombres.sort();
+  
+  for(let j =0; j<nombres.length; j++){
+  
+     if(nombres[j]==k)
+       document.write(nombres.indexOf(j));
+     else
+         document.write("-1");
+  
+  } 
