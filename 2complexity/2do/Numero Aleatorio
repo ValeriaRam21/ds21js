@@ -1,0 +1,12 @@
+    let  n= parseInt(prompt("teclea el numero hasta el que quieras llegar"));
+    	
+  function aleatorios(n1){
+  for(i=1;i<n1;i++){
+        let inicio = 1;
+      	let fin = n1;
+				let n = Math.random();
+ 				n = inicio + n * (fin - inicio + 1);
+ 			 return n = Math.floor(n);
+    }}
+  
+  document.write("un número aleatorio entre [1-"+n+"] es: "+ aleatorios(n));
