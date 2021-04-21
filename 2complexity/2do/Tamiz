@@ -1,0 +1,17 @@
+let  N= parseInt(prompt("teclea el numero"));         
+  let i,j;
+  let primo=[];
+  for(let i=0;i<N;i++){
+    primo[i]=true;
+  }
+  console.log(primo)//depuracion
+  for(i=2;i<N;i++){   //  
+    if (primo[i]==true)
+	   for(j=2;i*j<N;j++){
+  	   primo[i*j]=false;
+   	 }
+  }
+  for(i=2;i<N;i++){
+    if(primo[i])
+      document.write(i+ " ");
+  }
