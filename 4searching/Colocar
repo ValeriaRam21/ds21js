@@ -1,0 +1,14 @@
+   function Aleatorios(){
+ 
+   let inicio=1;
+   let fin=100; 
+   let num = Math.random();
+       num = inicio + num *(fin - inicio +1);
+       num = Math.floor(num);
+    
+   return num;
+  }
+   const mySet = new Set();
+
+      mySet.add(Aleatorios());
+       console.log(mySet);
