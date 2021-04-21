@@ -1,0 +1,8 @@
+  function multiplicar(j,i){
+	
+	  return j * i;
+	}
+  let mcm= ["3/4","4/3"];
+
+ document.write("El MCM de "+ mcm + "  es: "+multiplicar(3,4));
+ 
