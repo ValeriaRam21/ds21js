@@ -1,0 +1,27 @@
+let numeros=[];
+  
+  function aleatorios(n){
+        let inicio = 1;
+      	let fin = 100;
+				 n = Math.random();
+ 				n = inicio + n * (fin - inicio + 1);
+ 			 return n = Math.floor(n);
+    }
+for(let i=0;i<10;i++){
+     numeros.push(aleatorios());
+    
+  }
+  //ordenarlos
+  let  n = numeros.length;
+  let aux;
+   for (let k = 1; k < n; k++) {
+        for (i = 0; i < (n - k); i++) {
+            if (numeros[i] > numeros[i + 1]) {
+                aux = numeros[i];
+                numeros[i] = numeros[i + 1];
+                numeros[i + 1] = aux;
+            }
+        }
+    }
+  
+  document.write(numeros+" ");
