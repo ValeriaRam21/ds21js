@@ -1,0 +1,14 @@
+let p=1;
+ let v=-1;
+ let n=[3,2,1];
+ let m=[];
+  for(let i=0;i<a.length;i++){
+  if(i==p){
+     m.push(v);
+    m.push(a[i]);
+  } 
+    else
+      m.push(a[i]);
+    }
+  console.log(n);
+  console.log(m);
