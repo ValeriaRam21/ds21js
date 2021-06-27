@@ -1,0 +1,13 @@
+let p=1;
+ let m=[3,2,1];
+ let n=[];
+ let o=[];
+  for(let i=0;i<a.length;i++){
+  if(i==p){
+    o.push(a[i]);
+  } 
+   else
+     n.push(a[i]);
+    }
+  console.log(m);
+  console.log(n);
