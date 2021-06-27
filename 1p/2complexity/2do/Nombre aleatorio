@@ -1,0 +1,15 @@
+  function letraAle(){
+ let inicio=65;
+   let fin=90; 
+    let num = Math.random();
+    
+    num  = inicio + num *(fin - inicio +1);
+    num = Math.floor(num);
+   let letra = String.fromCharCode(num);
+    
+   return letra;
+  }
+   
+  for(let i =0; i<4; i++){
+    document.write(letraAle());
+  }

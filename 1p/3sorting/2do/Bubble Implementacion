@@ -1,0 +1,30 @@
+function letraAle(){
+ let inicio=65;
+   let fin=90; 
+    let num = Math.random();
+num  = inicio + num *(fin - inicio +1);
+    num = Math.floor(num);
+   let letra = String.fromCharCode(num);
+    
+   return letra;
+  }
+  let nombres=[];
+
+   for(let i =0; i<5; i++){
+    
+    nombres.push(letraAle()+letraAle()+letraAle()+letraAle());
+  }
+    let  n = nombres.length;
+  let aux;
+   for (let k = 1; k < n; k++) {
+        for (i = 0; i < (n - k); i++) {
+            if (nombres[i] > nombres[i + 1]) {
+                aux = nombres[i];
+                nombres[i] = nombres[i + 1];
+                nombres[i + 1] = aux;
+            }
+        }
+    }
+  
+ 
+  document.write(nombres);
