@@ -1,0 +1,12 @@
+let v=6;
+ let m=[3,2,1];
+ let n=[];
+ 
+    n.push(v);
+   for(let i=0;i<a.length;i++){
+    n.push(a[i]);
+  }
+  
+    
+  console.log(m);
+  console.log(n);
