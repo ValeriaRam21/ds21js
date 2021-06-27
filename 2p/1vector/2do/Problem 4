@@ -1,0 +1,5 @@
+let n=[3,2,1];
+
+    a.pop();
+  
+  console.log(n);
